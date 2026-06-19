@@ -1,0 +1,46 @@
+
+.nave-bar {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    background-color: rgba(3, 67, 52, 1);
+    margin-right: 10px;
+    color: white;
+    padding: 0px 25px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.logo img {
+    height: 35px;
+    /* margin: 10px; */
+}
+
+.logo-text h1{
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.logo-text p{
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.nave-bar a{
+    text-decoration: none;
+    color: rgba(3, 67, 52, 1);
+    font-size: 15px;
+}

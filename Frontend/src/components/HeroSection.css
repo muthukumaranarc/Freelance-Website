@@ -1,0 +1,124 @@
+.hero-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Offsets the element by its own half-width and half-height */
+  
+  width: 90vw; 
+  height: 70vh; 
+  color: rgba(3, 67, 52, 1); 
+  /* border: 1px solid red; */
+  display: flex; 
+  justify-content: space-between; 
+}
+
+
+.hero-left {
+    width: 30vw;
+    position: relative;
+    left: 2vw;
+}
+
+.hero-section h1 {
+    font-size: 2.5vw;
+    margin: 20px 0px;
+}
+
+.hero-left > div{
+    width: 95%;
+    height: 55px;
+    background-color: rgba(3, 67, 52, 1);
+    color: white;
+    font-size: 3.5vw;
+    font-weight: bold;
+    border-radius: 10px;
+    transform: rotate(-2deg);
+    margin-top: -15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left > p {
+    letter-spacing: 0.2px;
+    font-size: 1.2vw;
+}
+
+.hero-section button {
+    border: none;
+    font-size: 1.4vw;
+    padding: 2vh 2vw;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.hero-section button:nth-of-type(1){
+    background-color: rgba(3, 67, 52, 1);
+    margin-right: 10px;
+    color: white;
+}
+
+.hero-section button:nth-of-type(2){
+    background-color: rgba(197, 242, 226, 1);
+    color: rgba(3, 67, 52, 1);
+}
+
+
+/* Hero Right section */
+.hero-right {
+    /* border: 1px solid red; */
+    margin-right: 2vw;
+}
+
+.hero-right > .hero-image > img {
+    height: 89vh;
+}
+
+.hero-back {
+    background-color: rgba(3, 67, 52, 1);
+    height: 106vh;
+    width: 200px;
+
+    transform: rotate(5deg);
+    position: relative;
+    top: -106vh;
+    left: 220px;
+    z-index: -1;
+}
+
+.hero-tech {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+}
+
+.hero-tech > div {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.256);
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-tech > div > img {
+    width: 50px;
+}
+
+.hero-bottom {
+    position: absolute;
+    bottom: -158px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+}
