@@ -1,13 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import HeroSection from './components/HeroSection.jsx'
-import NaveBar from './components/NaveBar.jsx'
-
+import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <NaveBar />
-    <HeroSection />
+    <App />
   </StrictMode>,
 )
