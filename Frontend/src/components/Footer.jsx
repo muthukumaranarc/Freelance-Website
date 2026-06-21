@@ -20,21 +20,21 @@ const Footer = () => {
         </div>
 
         <div className="footer-right">
-          <div className="footer-nav">
             <h4>Quick Links</h4>
-            <a href="#hero">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#contact">Contact</a>
-          </div>
+            <div className="footer-nav">
+              <a href="#hero">Home</a>
+              <a href="#projects">Projects</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#reviews">Reviews</a>
+              <a href="#contact">Contact</a>
+            </div>
         </div>
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Muthu Freelancing. All rights reserved.</p>
-        <p>Designed and Built with React &amp; Spring Boot</p>
+        <p>{new Date().getFullYear()} Muthu Freelancing. All rights reserved.</p>
+        <p>Designed and Built with React JS &amp; Spring Boot</p>
       </div>
     </footer>
   );

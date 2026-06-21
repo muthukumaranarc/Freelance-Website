@@ -26,10 +26,10 @@
   transition: var(--transition);
 }
 
-.logo:hover {
+/* .logo:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(3, 67, 52, 0.15);
-}
+} */
 
 .logo img {
   height: 32px;
@@ -97,10 +97,10 @@
 }
 
 .nav-cta:hover {
-  background-color: var(--accent-color);
-  color: var(--text-light);
+  /* background-color: var(--accent-color);
+  color: var(--text-light); */
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 114, 94, 0.3);
+  box-shadow: 0 4px 12px rgba(3, 67, 52, 0.15);
 }
 
 /* Responsive navbar */

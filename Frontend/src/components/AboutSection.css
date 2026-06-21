@@ -1,152 +1,91 @@
 .about-section {
-  background-color: var(--bg-cream);
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 100px 10%;
 }
 
 .about-container {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 80px;
   width: 100%;
   max-width: 1100px;
 }
 
-/* About Left: Image frame */
+/* About Left: Image and Background Circle */
 .about-left {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
-.image-frame {
+.about-image-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 380px;
-  height: 480px;
-  border-radius: 24px;
-  background-color: var(--bg-light);
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(3, 67, 52, 0.1);
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
 }
 
-.image-frame::before {
-  content: '';
+.about-bg-circle {
   position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border: 2px dashed var(--primary-color);
-  border-radius: 18px;
-  opacity: 0.3;
+  width: 250px;
+  height: 250px;
+  background-color: #9aa5a1; /* matching the gray-green tint circle in image */
+  opacity: 0.85;
+  border-radius: 50%;
+  z-index: 1;
+  right: 5%;
+  top: 35%;
 }
 
 .about-image {
-  height: 95%;
-  width: auto;
-  object-fit: contain;
+  position: relative;
   z-index: 2;
-  transition: var(--transition);
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
 }
 
-.image-frame:hover .about-image {
-  transform: scale(1.05);
-}
-
-/* About Right: Story & Skills */
+/* About Right: Typography and Text spacing */
 .about-right {
   flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.about-badge {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-  font-size: 0.85rem;
+.about-label {
+  color: #5f7470;
+  font-size: 0.95rem;
   font-weight: 700;
-  padding: 6px 16px;
-  border-radius: 20px;
-  text-transform: uppercase;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 .about-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
-  color: var(--primary-color);
-  margin-bottom: 15px;
-  line-height: 1.2;
-}
-
-.about-headline {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-  line-height: 1.4;
+  color: #000000;
+  margin-bottom: 25px;
+  line-height: 1.15;
 }
 
 .about-text {
-  font-size: 1rem;
-  color: var(--primary-color);
-  opacity: 0.85;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-/* Skills progress metrics */
-.about-skills-container {
-  margin-top: 30px;
-  border-top: 1px solid rgba(3, 67, 52, 0.1);
-  padding-top: 25px;
-}
-
-.skills-heading {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 18px;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.skill-name {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--primary-color);
-}
-
-.skill-bar {
-  width: 100%;
-  height: 6px;
-  background-color: rgba(3, 67, 52, 0.1);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background-color: var(--accent-color);
-  border-radius: 3px;
-  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.05rem;
+  color: #555555;
+  margin-bottom: 20px;
+  line-height: 1.65;
+  font-weight: 400;
 }
 
 /* Responsiveness */
@@ -155,31 +94,36 @@
     gap: 40px;
   }
   .about-title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+  }
+  .about-bg-circle {
+    width: 200px;
+    height: 200px;
   }
 }
 
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
+    text-align: left;
   }
   
   .about-left {
     width: 100%;
   }
 
-  .image-frame {
+  .about-image-wrapper {
     max-width: 320px;
-    height: 400px;
+  }
+
+  .about-bg-circle {
+    width: 180px;
+    height: 180px;
+    right: 8%;
   }
 
   .about-right {
     width: 100%;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
   }
 }

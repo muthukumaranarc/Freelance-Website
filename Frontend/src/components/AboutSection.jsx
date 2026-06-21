@@ -7,45 +7,27 @@ const AboutSection = () => {
     <section id="about" className="about-section">
       <div className="about-container">
         <div className="about-left">
-          <div className="image-frame">
+          <div className="about-image-wrapper">
+            <div className="about-bg-circle"></div>
             <img src={muthuAbout} alt="Muthu" className="about-image" />
           </div>
         </div>
 
         <div className="about-right">
-          <span className="about-badge">About Me</span>
+          <span className="about-label">ABOUT</span>
           <h2 className="about-title">Beyond the Code</h2>
-          <p className="about-headline">I design and develop functional, pixel-perfect solutions that solve real-world problems.</p>
           
           <p className="about-text">
-            My name is Muthu, a freelance full-stack developer and designer. I specialize in building custom web systems with React, Spring Boot, and MongoDB. I focus on clean architecture, lightning-fast performance, and user-centric designs.
+            I'm Muthukumaran, a passionate Full-Stack Developer focused on building impactful digital experiences with Spring Boot, React, and modern technologies.
           </p>
           
           <p className="about-text">
-            Whether starting from scratch in Figma or optimizing an existing production application, I bring value at every stage of the lifecycle. I value transparency, efficiency, and writing clean, scalable code.
+            My journey started with curiosity and grew into a mission to create solutions that solve real-world problems. From designing intuitive interfaces to building scalable backend systems, I enjoy turning ideas into functional products.
           </p>
 
-          <div className="about-skills-container">
-            <h3 className="skills-heading">Core Competencies</h3>
-            <div className="skills-grid">
-              <div className="skill-item">
-                <span className="skill-name">Frontend Architecture</span>
-                <div className="skill-bar"><div className="skill-progress" style={{width: '95%'}}></div></div>
-              </div>
-              <div className="skill-item">
-                <span className="skill-name">Backend & API Design</span>
-                <div className="skill-bar"><div className="skill-progress" style={{width: '90%'}}></div></div>
-              </div>
-              <div className="skill-item">
-                <span className="skill-name">UI/UX Layouts (Figma)</span>
-                <div className="skill-bar"><div className="skill-progress" style={{width: '85%'}}></div></div>
-              </div>
-              <div className="skill-item">
-                <span className="skill-name">Database Modeling</span>
-                <div className="skill-bar"><div className="skill-progress" style={{width: '88%'}}></div></div>
-              </div>
-            </div>
-          </div>
+          <p className="about-text">
+            Beyond development, I'm deeply interested in AI, product building, freelancing, and continuous self-growth. I believe technology is not just about writing code - it's about creating meaningful experiences that make life better.
+          </p>
         </div>
       </div>
     </section>
