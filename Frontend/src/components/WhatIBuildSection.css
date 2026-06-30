@@ -1,0 +1,221 @@
+.what-i-build-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-cream);
+  padding: 80px 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.wib-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ── Header ── */
+.wib-header {
+  margin-bottom: 50px;
+  max-width: 700px;
+}
+
+.wib-badge {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.wib-badge::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.wib-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.wib-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  margin-bottom: 18px;
+}
+
+.wib-desc {
+  font-size: 1.05rem;
+  color: var(--primary-color);
+  opacity: 0.85;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ── Cards ── */
+.wib-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+
+.wib-card {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(3, 67, 52, 0.08);
+  transition: var(--transition);
+  border: 1px solid rgba(3, 67, 52, 0.06);
+}
+
+.wib-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(3, 67, 52, 0.14);
+  border-color: rgba(3, 67, 52, 0.12);
+}
+
+.wib-card-icon-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+  background-color: var(--bg-light);
+  border-radius: 18px;
+  margin-bottom: 22px;
+  transition: var(--transition);
+}
+
+.wib-card:hover .wib-card-icon-wrapper {
+  background-color: var(--primary-color);
+}
+
+.wib-card-icon {
+  width: 34px;
+  height: 34px;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.wib-card:hover .wib-card-icon {
+  color: var(--text-light);
+}
+
+.wib-card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.wib-card-desc {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  opacity: 0.8;
+  line-height: 1.6;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* ── Buttons ── */
+.wib-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wib-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.wib-btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: 2px solid var(--primary-color);
+}
+
+.wib-btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(3, 67, 52, 0.25);
+}
+
+.wib-btn-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.wib-btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(3, 67, 52, 0.25);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .what-i-build-section {
+    padding: 60px 5%;
+  }
+
+  .wib-title {
+    font-size: 2.2rem;
+  }
+
+  .wib-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .wib-cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .wib-card {
+    padding: 32px 24px;
+  }
+
+  .wib-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wib-btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}
