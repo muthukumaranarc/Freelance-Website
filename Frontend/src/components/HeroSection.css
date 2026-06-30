@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 80px);
+  margin-top: 80px;
   background-color: var(--bg-cream);
   padding: 60px 10%;
   position: relative;
